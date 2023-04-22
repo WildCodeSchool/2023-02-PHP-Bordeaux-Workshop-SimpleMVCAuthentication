@@ -2,6 +2,7 @@
 
 {% block content %}
     <h1>Items</h1>
+    <p>Hello {{ user.pseudo }}</p>
     <ul>
         {% for item in items %}
             <li><a href="/items/show?id={{ item.id }}">{{ item.id }}. {{ item.title }}</a></li>
